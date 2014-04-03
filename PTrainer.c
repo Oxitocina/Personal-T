@@ -17,10 +17,12 @@ int main (int argc, char *argv[]){
 		if (numero == ultimos[0] || numero == ultimos[1])
 			continue;
 		else {
-			if(contador%2==0)
-				ultimos[0]=numero;
-			else
-				ultimos[1]=numero;
+			if (numero != 0){
+				if(contador%2==0)
+					ultimos[0]=numero;
+				else
+					ultimos[1]=numero;
+			}
 		}
 		contador=eligeTrabajo(numero, contador);
 		if (contador==0)
