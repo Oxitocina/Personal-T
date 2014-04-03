@@ -4,6 +4,7 @@
 #include <string.h>
 #include <time.h>
 int eligeTrabajo(int, int);
+int cuentaAtras(int);
 
 int main (int argc, char *argv[]){
 	srand(time(NULL));
